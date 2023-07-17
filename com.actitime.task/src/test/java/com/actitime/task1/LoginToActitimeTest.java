@@ -13,7 +13,7 @@ public class LoginToActitimeTest extends BaseClass {
 public void loginToHomePageTest() throws Throwable  {
 		webdriverUtils.implicitWait(driver);
 		loginPage loginPage = new loginPage(driver);
-		loginPage.getUserNameTextField().sendKeys(fileUtils.readDataFromPropertyFile("userName"));
+		loginPage.getUserNameTextField().sendKeys(fileUtils.readDataFromPropertyFile("username"));
 		loginPage.getPasswordTextField().sendKeys(fileUtils.readDataFromPropertyFile("password"));
 		loginPage.getLoginButton().click();
 		HomePage homePage = new HomePage(driver);
@@ -21,6 +21,5 @@ public void loginToHomePageTest() throws Throwable  {
 			homePage.getLogoutOption().click();
 			System.out.println("HomePage is Pass");
 		}
-		//Test is ended
 	}
 }
