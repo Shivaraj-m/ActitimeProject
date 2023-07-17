@@ -21,5 +21,6 @@ public void loginToHomePageTest() throws Throwable  {
 			homePage.getLogoutOption().click();
 			System.out.println("HomePage is Pass");
 		}
+		//Test is ended
 	}
 }
