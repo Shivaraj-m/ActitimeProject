@@ -2,22 +2,30 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[PASS]]>
+      <![CDATA[Homepage is  displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-17T20:53:28 IST" name="Default suite" finished-at="2023-07-17T20:53:28 IST" duration-ms="98">
+  <suite started-at="2023-07-18T12:41:40 IST" name="Default suite" finished-at="2023-07-18T12:41:56 IST" duration-ms="16583">
     <groups>
     </groups>
-    <test started-at="2023-07-17T20:53:28 IST" name="Default test" finished-at="2023-07-17T20:53:28 IST" duration-ms="98">
-      <class name="practice.PracticeAssertion">
-        <test-method signature="test()[pri:0, instance:practice.PracticeAssertion@57d7f8ca]" started-at="2023-07-17T20:53:28 IST" name="test" finished-at="2023-07-17T20:53:28 IST" duration-ms="18" status="PASS">
+    <test started-at="2023-07-18T12:41:40 IST" name="Default test" finished-at="2023-07-18T12:41:56 IST" duration-ms="16583">
+      <class name="com.actitime.task1.LoginToActitimeTest">
+        <test-method is-config="true" signature="configBeforMethod()[pri:0, instance:com.actitime.task1.LoginToActitimeTest@47faa49c]" started-at="2023-07-18T12:41:40 IST" name="configBeforMethod" finished-at="2023-07-18T12:41:50 IST" duration-ms="10658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforMethod -->
+        <test-method signature="loginToHomePageTest()[pri:0, instance:com.actitime.task1.LoginToActitimeTest@47faa49c]" started-at="2023-07-18T12:41:50 IST" name="loginToHomePageTest" finished-at="2023-07-18T12:41:56 IST" duration-ms="5354" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[PASS]]>
+              <![CDATA[Homepage is  displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- practice.PracticeAssertion -->
+        </test-method> <!-- loginToHomePageTest -->
+        <test-method is-config="true" signature="confiAfterMethod()[pri:0, instance:com.actitime.task1.LoginToActitimeTest@47faa49c]" started-at="2023-07-18T12:41:56 IST" name="confiAfterMethod" finished-at="2023-07-18T12:41:56 IST" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confiAfterMethod -->
+      </class> <!-- com.actitime.task1.LoginToActitimeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

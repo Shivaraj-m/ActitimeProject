@@ -2,6 +2,8 @@ package com.actitime.task1;
 
 import java.io.IOException;
 
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.actitime.generic.BaseClass;
@@ -17,9 +19,8 @@ public void loginToHomePageTest() throws Throwable  {
 		loginPage.getPasswordTextField().sendKeys(fileUtils.readDataFromPropertyFile("password"));
 		loginPage.getLoginButton().click();
 		HomePage homePage = new HomePage(driver);
-		if(homePage.getLogoutOption().isDisplayed()) {
-			homePage.getLogoutOption().click();
-			System.out.println("HomePage is Pass");
-		}
+		Assert.assertTrue(homePage.getLogoutOption().isDisplayed(), "HomePage is not Pass");
+		Reporter.log("Homepage is  displayed", true);
+		
 	}
 }
